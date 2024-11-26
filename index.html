@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menubar">
+            <a><h1>MOBILE</h1></a>
+            <ul>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="product/product.html">PRODUCT</a> </li>
+                <li><a href="shippingcart/shipping1.html">SHIPPING CART</a></li>
+                <li><a href="checkout/checkout.html">CHECKOUT</a></li>
+                <li><a href="login/login.html">LOGIN</a></li>
+                <li><a href="aboutus/about.html">ABOUT US</a></li>
+                <li><a href="contactup/contact.html">CONTACT US</a></li>
+                <li>
+                    <i class="fa fa-search search"></i>
+                    <input type="search" name="search" placeholder="search...">
+                </li>
+            </ul>    
+        </div>
+
+        <div class="menubar2">
+            <a><h1>MOBILE</h1></a>
+            <ul id="hidden_bar_id">
+                <li><a href="#">HOME</a> </li>
+                <li><a href="./product/product.html">PRODUCT</a> </li>
+                <li><a href="./shippingcart/shippingcart.html">SHIPPING CART</a></li>
+                <li><a href="./checkout/checkout.html">CHECKOUT</a></li>
+                <li><a href="./login/login.html">LOGIN</a></li>
+                <li><a href="./aboutus/about.html">ABOUT US</a></li>
+                <li><a href="./contactup/contact.html">CONTACT US</a></li>
+                <li><button onclick="close_menu()" style="color: white; border: none;font-size: 22px;background-color: rgba(0,0,0,0);">close</button></li>
+            </ul> 
+            <button onclick="mobile_menu()" class="menu_button">
+                <svg  xmlns="http://www.w3.org/2000/svg" fill="white" x="0px" y="0px" width="40" height="30" viewBox="0 0 50 50">
+                <path d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"></path>
+                </svg>
+            </button>   
+        </div>
+    </div>
+        <section class="sec"> 
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/h1.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a2.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a3.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a4.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a5.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a6.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a7.png"></a>
+                </div>
+                <div class="image-grid-item">
+                    <a href="product/product.html"><img src="image/a8.png"></a>
+                </div>
+            </div>
+        </section>
+        <div class="footercontainer">
+            <div class="socialicon">
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-linkedin"></i></a>
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-instagram"></i></a>
+            </div>
+
+            <div class="link">
+                <ul>
+                <li class="icon"><a href="#">HOME</a> </li>
+                <li class="icon"><a href="product/product.html">PRODUCT</a> </li>
+                <li class="icon"><a href="shippingcart/shippingcart.html">SHIPPING CART</a></li>
+                <li class="icon"><a href="checkout/checkout.html">CHECKOUT</a></li>
+                <li class="icon"><a href="login/login.html">LOGIN</a></li>
+                <li class="icon"><a href="aboutus/about.html">ABOUT US</a></li>
+                <li class="icon"><a href="contactup/contact.html">CONTACT US</a></li>
+            </ul>
+            </div>
+        </div>
+        
+        <script>
+            function mobile_menu(){
+    const h1=document.getElementById("hidden_bar_id");
+    h1.style.display="block";
+}
+
+function close_menu(){
+    const h1=document.getElementById("hidden_bar_id");
+    h1.style.display="none";
+}
+        </script>
+    </body>
+</html>

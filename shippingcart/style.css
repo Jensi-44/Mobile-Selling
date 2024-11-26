@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background:black;
+}
+.main
+{
+    width: 100%;
+}
+.shipping-cart
+{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.text
+{
+    flex-basis: 45%;
+    padding-top: 200px;
+}
+.img img
+{
+    padding-top: 10px;
+    width: 350px;
+    margin-top: 150px;
+}
+p
+{
+    margin-bottom: 15px;
+}
+.brand
+{
+    background-color: green;
+    width: fit-content;
+    color: aliceblue;
+    font-size: 12px;
+    border: 1px solid green;
+    padding: 2px 5px;
+    
+}
+h2
+{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+.color
+{
+    color: white;
+}
+h3
+{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px;
+}
+.btn a:link, .btn a:visited
+{
+    color: white;
+    text-decoration: none;
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 0.2s;
+    display: inline-block;
+    padding: 10px;
+}
+.camera
+{
+    color: white;
+}
+.camera p
+{
+    color: white;
+}
+.price
+{
+    color: white;
+}
+
+/****** responsive *******/
+
+ @media(max-width:1200px)
+ {
+    .shipping-cart
+    {
+        flex-direction: column;
+        height: auto;
+        padding: 5% 0;
+    } 
+    .text
+    {
+        padding-top: 50px;
+    }
+ }
+ @media(max-width:600px)
+ {
+    .img{
+        flex-direction: column;
+        height: auto;
+    }
+    .detail{
+        width: 100%;
+    }
+    h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    @media (max-width: 600px)
+{
+    .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+ 
